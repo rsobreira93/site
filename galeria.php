@@ -1,5 +1,37 @@
 <?php include "cabecalho.php" ?>
 
+<?php
+
+$filme1 = [
+    "titulo"=>"Vingadores: Ultimato",
+    "nota"=> 9.5,
+    "sinopse"=>"Após os eventos devastadores de Vingadores: Guerra Infinita, o universo está em ruínas devido aos esforços do Titã Louco, Thanos. Com a ajuda de aliados remanescentes, os Vingadores devem se reunir mais uma vez a fim de desfazer as ações de Thanos e restaurar a ordem no universo de uma vez por todas, não importando as consequências.",
+    "poster"=>"https://image.tmdb.org/t/p/w300/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg"
+];
+
+$filme2 = [
+    "titulo"=>"Mulher-Maravilha 1984",
+    "nota"=> 10.0,
+    "sinopse"=>"Em 1984, Diana Prince entra em conflito com dois inimigos formidáveis, Maxwell Lord e a Mulher-Leopardo, enquanto reencontra misteriosamente com seu antigo interesse amoroso Steve Trevor.",
+    "poster"=>"https://image.tmdb.org/t/p/w300/pBHYbehxaSSMc0X5m5iKBvqWzCi.jpg"
+];
+
+$filme3 = [
+    "titulo"=>"Invasão Zumbi 2: Península",
+    "nota"=> 6.0,
+    "sinopse"=>"A península coreana ficou devastada após o surto de zumbis que atingiu os passageiros de um trem-bala com destino a Busan há quatro anos. Com isso, um ex-soldado que conseguiu fugir do país, Jung-seok, tem a missão de retornar e acaba encontrando alguns sobreviventes.",
+    "poster"=>"https://image.tmdb.org/t/p/w300/dGVUiqnahQ4ZZRchGRpO2SyhtQY.jpg"
+];
+
+$filme4 = [
+    "titulo"=>"Tenet",
+    "nota"=> 7.9,
+    "sinopse"=>"Armado com apenas uma palavra – Tenet – e lutando pela sobrevivência do mundo inteiro, o Protagonista viaja através de um mundo crepuscular de espionagem internacional em uma missão que irá desenrolar em algo para além do tempo real.",
+    "poster"=>"https://image.tmdb.org/t/p/w300/jutsxphSGbnpxpGr23xzbf2ziQZ.jpg"
+];
+
+$filmes = [$filme1, $filme2, $filme3, $filme4];
+?>
 <body>
     
   <nav class="nav-extended purple lighten-3">
@@ -22,79 +54,22 @@
   </nav>
         
     <div class="row">
-        <div class="col s3">
-            <div class="card hoverable">
-                <div class="card-image">
-                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
-                    <img src="https://image.tmdb.org/t/p/w300/q6725aR8Zs4IwGMXzZT8aC8lh41.jpg">
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-                </div>
-                <div class="card-content">
-                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 9,5</p>
-                    <span class="card-title">Vingadores</span>
-                    <p>Após os eventos devastadores de "Vingadores: Guerra Infinita", o universo está em ruínas devido aos esforços do Titã Louco, Thanos. Com a ajuda de aliados remanescentes, os Vingadores devem se reunir mais uma vez a fim de desfazer as ações de Thanos e restaurar a ordem no universo de uma vez por todas, não importando as consequências.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col s3">
-            <div class="card hoverable">
-                <div class="card-image">
-                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
-                    <img src="https://image.tmdb.org/t/p/w300/pBHYbehxaSSMc0X5m5iKBvqWzCi.jpg">
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-                </div>
-                <div class="card-content">
-                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 10,0</p>
-                    <span class="card-title">Mulher-Maravilha 1984</span>
-                    <p>Em 1984, Diana Prince entra em conflito com dois inimigos formidáveis, Maxwell Lord e a Mulher-Leopardo, enquanto reencontra misteriosamente com seu antigo interesse amoroso Steve Trevor.</p>
+        <?php foreach ($filmes as $filme) :  ?>
+            <div class="col s3">
+                <div class="card hoverable">
+                    <div class="card-image">
+                    <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
+                        <img src="<?=$filme["poster"]?>">
+                        <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                    </div>
+                        <div class="card-content">
+                            <p class="valign-wrapper"><i class="material-icons amber-text">star</i> <?=$filme["nota"]?></p>
+                            <span class="card-title"><?= $filme["titulo"]?></span>
+                            <p><?= $filme["sinopse"] ?></p>
+                        </div>
                 </div>
             </div>
-        </div>
-
-        <div class="col s3">
-            <div class="card hoverable">
-                <div class="card-image">
-                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
-                    <img src="https://image.tmdb.org/t/p/w300/dGVUiqnahQ4ZZRchGRpO2SyhtQY.jpg">
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-                </div>
-                <div class="card-content">
-                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 6,0</p>
-                    <span class="card-title">Invasão Zumbi 2: Península</span>
-                    <p>A península coreana ficou devastada após o surto de zumbis que atingiu os passageiros de um trem-bala com destino a Busan há quatro anos. Com isso, um ex-soldado que conseguiu fugir do país, Jung-seok, tem a missão de retornar e acaba encontrando alguns sobreviventes.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s3">
-            <div class="card hoverable">
-                <div class="card-image">
-                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
-                    <img src="https://image.tmdb.org/t/p/w300/jutsxphSGbnpxpGr23xzbf2ziQZ.jpg">
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-                </div>
-                <div class="card-content">
-                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 7,9</p>
-                    <span class="card-title">Tenet</span>
-                    <p>Armado com apenas uma palavra – Tenet – e lutando pela sobrevivência do mundo inteiro, o Protagonista viaja através de um mundo crepuscular de espionagem internacional em uma missão que irá desenrolar em algo para além do tempo real.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="col s3">
-            <div class="card hoverable">
-                <div class="card-image">
-                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
-                    <img src="https://image.tmdb.org/t/p/w300/uoYHGazS5wLQFJe7tqZ39M8dA7Q.jpg">
-                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
-                </div>
-                <div class="card-content">
-                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 7,7</p>
-                    <span class="card-title">Monstros do Homem</span>
-                    <p>Uma empresa de robótica que tenta ganhar um lucrativo contrato militar se alia a um agente corrupto da CIA para conduzir um teste ilegal de campo ao vivo. Eles lançam quatro protótipos de robôs armados em um campo suspeito de fabricação de drogas no Triângulo Dourado, presumindo que estariam matando traficantes de drogas que ninguém perderia. Seis médicos em uma missão humanitária testemunham o massacre brutal e se tornam os principais alvos.</p>
-                </div>
-            </div>
-        </div>
+        <?php endforeach ?>
     </div>
 
     
