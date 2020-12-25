@@ -66,6 +66,51 @@
                 </div>
             </div>
         </div>
+
+        <div class="col s3">
+            <div class="card hoverable">
+                <div class="card-image">
+                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
+                    <img src="https://image.tmdb.org/t/p/w300/dGVUiqnahQ4ZZRchGRpO2SyhtQY.jpg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 6,0</p>
+                    <span class="card-title">Invasão Zumbi 2: Península</span>
+                    <p>A península coreana ficou devastada após o surto de zumbis que atingiu os passageiros de um trem-bala com destino a Busan há quatro anos. Com isso, um ex-soldado que conseguiu fugir do país, Jung-seok, tem a missão de retornar e acaba encontrando alguns sobreviventes.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s3">
+            <div class="card hoverable">
+                <div class="card-image">
+                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
+                    <img src="https://image.tmdb.org/t/p/w300/jutsxphSGbnpxpGr23xzbf2ziQZ.jpg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 7,9</p>
+                    <span class="card-title">Tenet</span>
+                    <p>Armado com apenas uma palavra – Tenet – e lutando pela sobrevivência do mundo inteiro, o Protagonista viaja através de um mundo crepuscular de espionagem internacional em uma missão que irá desenrolar em algo para além do tempo real.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s3">
+            <div class="card hoverable">
+                <div class="card-image">
+                 <!-- imagem do site https://www.themoviedb.org  procura filme e vai em posters-->
+                    <img src="https://image.tmdb.org/t/p/w300/uoYHGazS5wLQFJe7tqZ39M8dA7Q.jpg">
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">favorite_border</i></a>
+                </div>
+                <div class="card-content">
+                    <p class="valign-wrapper"><i class="material-icons amber-text">star</i> 7,7</p>
+                    <span class="card-title">Monstros do Homem</span>
+                    <p>Uma empresa de robótica que tenta ganhar um lucrativo contrato militar se alia a um agente corrupto da CIA para conduzir um teste ilegal de campo ao vivo. Eles lançam quatro protótipos de robôs armados em um campo suspeito de fabricação de drogas no Triângulo Dourado, presumindo que estariam matando traficantes de drogas que ninguém perderia. Seis médicos em uma missão humanitária testemunham o massacre brutal e se tornam os principais alvos.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     
