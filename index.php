@@ -5,7 +5,7 @@ $metodo = $_SERVER["REQUEST_METHOD"];
 
 require "./controller/FilmesController.php";
 
-if ($rota === "/"){
+if ($rota === "/inicio"){
     require "view/galeria.php";
     exit();
 }
