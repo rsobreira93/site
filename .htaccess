@@ -1,0 +1,10 @@
+DirectoryIndex index.php
+
+RewriteEngine on
+
+RewriteBase /
+
+RewriteConde %{REQUEST_FILENAME} !-f
+RewriteConde %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)$ index.php [QSA]

@@ -8,7 +8,7 @@ if ($bd->exec($sql))
      echo "\nTabela filmes apagada\n";
 
 $sql = "CREATE TABLE filmes(
-        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        id INTEGER PRIMARY KEY AUTO_INCREMENT,
         titulo VARCHAR(200) NOT NULL,
         poster VARCHAR(200),
         sinopse TEXT,
