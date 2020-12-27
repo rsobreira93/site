@@ -59,9 +59,9 @@ $filmes = $controller->index();
   <script>
    document.querySelectorAll(".btn-fav").forEach(btn =>{
     btn.addEventListener("click", e =>{
-      cons id = btn.getAttribute("data-id")
+      const id = btn.getAttribute("data-id")
       fetch("/favoritar/" + id).then(response => response.json()).then(response => {
-        if (response.success == "ok"){
+        if (response.success === "ok"){
           if (btn.querySelector("i").innerHTML === "favorite") {
             btn.querySelector("i").innerHTML = "favorite_border"
           }else{
