@@ -15,7 +15,8 @@ private $conexao;
 
         $sql = "SELECT * FROM filmes";
         $filmes = $this->conexao->query($sql);
-
+        if(!filmes) return false;
+        
         while($filme = $filmes->fetchObject()){
             array_push($filmesLista, $filme);
         }
