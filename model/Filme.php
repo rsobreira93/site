@@ -2,28 +2,19 @@
 
 class Filme{
 
-    /**
-     * @var int $id
-     */
+    /** @var int $id */
     public $id;
-
-    /**
-     * @var string $titulo
-     */
+    
+    /** @var string $titulo */
     public $titulo;
-
-     /**
-     * @var string $sinopse
-     */
+    
+    /** @var string $sinopse */
     public $sinopse;
-
-     /**
-     * @var float $nota
-     */
+   
+    /** @var float $nota */
     public $nota;
     
-       /**
-     * @var string $poster
-     */
+    /** @var string $poster */
     public $poster;
+
 }
