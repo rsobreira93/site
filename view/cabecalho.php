@@ -12,5 +12,5 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
 
-    <title>Clorocine</title>
+    <title>Filmes 4u</title>
 </head>
