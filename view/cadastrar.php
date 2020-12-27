@@ -21,6 +21,7 @@
   </nav>
 
   <div class="row">
+    <form  method="POST" enctype="multipart/form-data">
         <div class="col s6 offset-s3">
             <div class="card">
                 <div class="card-content">
@@ -29,27 +30,25 @@
                     <!-- Input do titulo -->
                     <div class="row">
                         <div class="input-field col s12">
-                            <input id="titulo" type="text" class="validate" require>
+                            <input id="titulo" type="text" class="validate" name="titulo" required>
                             <label for="titulo">Título do filme</label>
                         </div>
                     </div>
                 
                     <!-- Textarea da sinopse-->
                     <div class="row">
-                        <form class="col s12">
-                            <div class="row">
-                                <div class="input-field col s12">
-                                    <textarea id="sinopse" class="materialize-textarea"></textarea>
-                                    <label for="sinopse">Sinopse</label>
-                                </div>
-                            </div>
-                        </form>
+                          <div class="row">
+                               <div class="input-field col s12">
+                                   <textarea name="sinopse" id="sinopse" class="materialize-textarea"></textarea>
+                                   <label for="sinopse">Sinopse</label>
+                              </div>
+                          </div>
                     </div>
 
                     <!-- input da nota-->
                     <div class="row">
                         <div class="input-field col s4">
-                            <input id="nota" type="number" step=".1" min=0 max=10 class="validate" require>
+                            <input id="nota" name="nota" type="number" step=".1" min=0 max=10 class="validate" required>
                             <label for="nota">Nota</label>
                         </div>
                     </div>
@@ -58,20 +57,21 @@
                     <div class="file-field input-field">
                         <div class="btn  purple lighten-2">
                             <span>Capa</span>
-                            <input type="file">
+                            <input type="file" name="poster_file">
                         </div>
                         <div class="file-path-wrapper">
-                            <input class="file-path validate" type="text">
+                            <input name="poster" class="file-path validate" type="text">
                         </div>
                     </div>                
                     <div class="card-action">
-                        <a class="btn waves-effect waves-light grey" href="galeria.php">Cancelar</a>
-                        <a href="#" class="waves-effect waves-light btn purple">Confirmar</a>
+                        <a class="btn waves-effect waves-light grey" href="/">Cancelar</a>
+                        <button type="submit" class="waves-effect waves-light btn purple">Confirmar</button>
                     </div>
 
                 </div>
             </div>
         </div>
+    </form>
   </div>
     
 </body>
