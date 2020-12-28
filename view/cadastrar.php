@@ -60,7 +60,7 @@
 
             <div class="card-action">
               <a class="btn waves-effect waves-light grey" href="/">Cancelar</a>
-              <button type="submit" class="waves-effect waves-light btn purple">Confirmar</button>
+              <button type="submit" class="waves-effect waves-light btn purple" href="/">Confirmar</button>
             </div>
           </div>
         </div>
