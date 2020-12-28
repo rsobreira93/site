@@ -7,7 +7,7 @@ require "./controller/FilmesController.php";
 
 if ($rota === "/"){
     require "view/galeria.php";
-//exit();
+    exit();
 }
 
 if ($rota === "/novo"){
